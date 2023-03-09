@@ -3729,11 +3729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Digipets Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
+      "projectUniqueName": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
       "projectName": "Digipets.API",
-      "projectPath": "D:\\Dev\\Digipets Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
+      "projectPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
       "packagesPath": "C:\\Users\\Joao Henrique\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Digipets Web\\Back-end\\Digipets\\Digipets.API\\obj\\",
+      "outputPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config",

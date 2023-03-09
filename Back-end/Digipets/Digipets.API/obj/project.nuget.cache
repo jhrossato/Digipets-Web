@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pKUIduBLw401ALs/3qSJmxwFPW9/isoX8+bVS8bUiVza7k89G4exX4IPPRNFKG6QK7Q9uJM0kHTmoay3FZpyng==",
+  "dgSpecHash": "+BaLyuiu8pm/ToVxTn5l9WoIsxdOgacZegmudrrzB7hKqMhGOnavhcDp36Hid0K/b/FRE3Ag6/vkBitpWAmchw==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Digipets Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
+  "projectFilePath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joao Henrique\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Joao Henrique\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
