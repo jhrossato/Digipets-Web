@@ -29,5 +29,11 @@ namespace Digipets.API.Entities
         [StringLength(9, ErrorMessage = "O CEP é um requisito obrigatório.")]
         public int CEP { get; private set; }
 
+        public Clinica Clinica { get; private set; }
+        public int ClinicaId { get; private set; }
+
+        public Veterinario Veterinario { get; private set; }
+        public int VeterinarioId { get; private set; }
+
     }
 }

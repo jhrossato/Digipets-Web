@@ -2,6 +2,7 @@
 using Digipets.API.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Digipets.API.Controllers
 {
@@ -13,18 +14,57 @@ namespace Digipets.API.Controllers
 
         public ClinicasController(DigipetsAPIContext context)
         {
-            _context = context; 
+            _context = context;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Clinica>> Get()
+        public async Task<ActionResult<IEnumerable<Clinica>>> Get()
         {
-            var clinicas = _context.TB_Clinicas.ToList();
-            if(clinicas is null)
+            try
             {
-                return NotFound();
+                var clinicas = await _context.TB_Clinicas.ToListAsync();
+                
+                return Ok(clinicas);
             }
-            return Ok(clinicas);
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Clinica>> Get(int id)
+        {
+            try
+            {
+                var result = await _context.TB_Clinicas.Where(c => c.Id == id).FirstOrDefaultAsync();
+              
+                return result is null ? NotFound() : result;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post([FromBody]Clinica clinica)
+        {
+            try
+            {
+                await _context.TB_Clinicas.AddAsync(clinica);
+                await _context.SaveChangesAsync();
+
+                return StatusCode(StatusCodes.Status201Created);
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
         }
     }
 }

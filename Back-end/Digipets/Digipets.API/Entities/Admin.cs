@@ -6,5 +6,6 @@ namespace Digipets.API.Entities
     public sealed class Admin : UserBase
     {
         public Clinica Clinica { get; private set; }
+        public int ClinicaId { get; private set; }
     }
 }
