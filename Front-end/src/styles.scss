@@ -3,4 +3,71 @@
 @tailwind components;
 @tailwind utilities;
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+body {
+ /*  width: 100vw;
+  height: 100vh;
+  min-height: 100vh; */
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field
+  .mdc-notched-outline__notch {
+  border-right-style: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.btn-blue {
+  background: linear-gradient(
+    176deg,
+    rgba(39, 58, 255, 1) 12%,
+    rgba(4, 170, 255, 1) 69%
+  );
+}
+.btn-blue:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: none !important;
+  border-color: none !important;
+  color: #fff;
+}
+.btn-blue:disabled {
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  box-shadow: none !important;
+  border: none;
+}
+.mat-mdc-form-field-error-wrapper {
+  padding: 0 1px !important;
+}
+
+.mat-mdc-form-field-infix {
+  min-height: 40px;
+}
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+a {
+  color: #1183ff;
+  text-decoration: none;
+  font-weight: 500;
+}
