@@ -5,11 +5,11 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 
-body {
- /*  width: 100vw;
+/* body {
+  width: 100vw;
   height: 100vh;
-  min-height: 100vh; */
-}
+  min-height: 100vh; 
+} */
 
 html,
 body {
@@ -32,7 +32,12 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
+.logo {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+}
 .btn-blue {
   background: linear-gradient(
     176deg,

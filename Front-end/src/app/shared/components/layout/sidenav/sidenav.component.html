@@ -1,0 +1,63 @@
+<mat-drawer-container class="h-full" autosize>
+  <mat-drawer #drawer class="drawer" mode="side">
+    <div class="logo-drawer flex flex-col items-center justify-center">
+      <img src="assets/logo/logo.png" alt="logo" class="w-14" />
+      <h1 class="logo">Digipets</h1>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <ng-container *ngFor="let menu of navigationMenu; index as i">
+        <ng-container
+          [ngTemplateOutlet]="menu.children ? childMenu : parentMenu"
+          [ngTemplateOutletContext]="{ menu: menu }"
+        >
+        </ng-container>
+      </ng-container>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+</mat-drawer-container>
+
+<ng-template #parentMenu let-menu="menu">
+  <mat-list-item
+    [routerLink]="menu.routerLink"
+    routerLinkActive="is-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <i matListItemIcon [ngClass]="menu.icon"></i>
+    <div matListItemTitle>
+      {{ menu.text }}
+    </div>
+  </mat-list-item>
+</ng-template>
+
+<ng-template #childMenu let-menu="menu">
+  <mat-expansion-panel [class.mat-elevation-z0]="true">
+    <mat-expansion-panel-header>
+      <mat-list-item>
+        <i matListItemIcon [ngClass]="menu.icon"></i>
+        <div matListItemTitle>
+          {{ menu.text }}
+        </div>
+      </mat-list-item>
+    </mat-expansion-panel-header>
+
+    <mat-nav-list>
+      <mat-list-item
+        [routerLink]="submenu.routerLink"
+        *ngFor="let submenu of menu.children"
+        routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div matListItemTitle>
+          {{ submenu.text }}
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</ng-template>

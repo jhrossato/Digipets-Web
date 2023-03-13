@@ -1,0 +1,29 @@
+.drawer {
+  background: linear-gradient(
+    176deg,
+    rgba(39, 58, 255, 1) 12%,
+    rgba(4, 170, 255, 1) 69%
+  );
+  padding: 20px;
+  color: #fff;
+  .logo-drawer {
+  }
+}
+.mat-expansion-panel {
+  background: none;
+}
+.mat-expansion-panel-header {
+  padding: 0 !important;
+}
+
+.mdc-list-item__primary-text,
+.mdc-list-item__start {
+  color: #fff !important;
+}
+.mdc-list-item__start {
+  font-size: 20px !important;
+}
+::ng-deep .mdc-list-item__start {
+  margin-left: 12px !important;
+  margin-right: 10px !important;
+}
