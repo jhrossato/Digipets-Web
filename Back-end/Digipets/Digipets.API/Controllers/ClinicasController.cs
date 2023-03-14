@@ -1,5 +1,6 @@
 ﻿using Digipets.API.Context;
 using Digipets.API.Entities;
+using Digipets.API.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -22,8 +23,8 @@ namespace Digipets.API.Controllers
         {
             try
             {
-                var clinicas = await _context.TB_Clinicas.ToListAsync();
-                
+                var clinicas = await _context.Clinicas.ToListAsync();
+
                 return Ok(clinicas);
             }
             catch
@@ -38,9 +39,11 @@ namespace Digipets.API.Controllers
         {
             try
             {
-                var result = await _context.TB_Clinicas.Where(c => c.Id == id).FirstOrDefaultAsync();
-              
-                return result is null ? NotFound() : result;
+                var result = await _context.Clinicas.Where(c => c.Id == id).FirstOrDefaultAsync();
+
+                return result is null 
+                    ? NotFound() 
+                    : result;
             }
             catch (Exception)
             {
@@ -50,21 +53,42 @@ namespace Digipets.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody]Clinica clinica)
+        public async Task<ActionResult<Clinica>> Post([FromBody]CreateClinicaViewModel model)
         {
-            try
+            if(!ModelState.IsValid)
             {
-                await _context.TB_Clinicas.AddAsync(clinica);
-                await _context.SaveChangesAsync();
-
-                return StatusCode(StatusCodes.Status201Created);
-
+                return BadRequest(ModelState);
             }
-            catch (Exception)
+
+            var clinica = new Clinica
             {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
-            }
+                Nome = model.Nome,
+                CRMV = model.CRMV,
+                CNPJ = model.CNPJ,
+                MAPA = model.MAPA,
+                Telefone = model.Telefone,
+                Email = model.Email,
+                Endereco = new Endereco
+                {
+                    Rua = model.Endereco.Rua,
+                    Numero = model.Endereco.Numero,
+                    Bairro = model.Endereco.Bairro,
+                    Cidade = model.Endereco.Cidade,
+                    CEP = model.Endereco.CEP,
+                },
+                Admin = new Admin
+                {
+                    Nome = model.Admin.Nome,
+                    Email = model.Admin.Email,
+                    Senha = model.Admin.Senha,
+                }
+            };
+
+            _context.Clinicas.Add(clinica);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(Get), new { id = clinica.Id }, clinica);
+
         }
     }
 }

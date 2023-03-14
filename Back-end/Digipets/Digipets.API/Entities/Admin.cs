@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Digipets.API.Entities
 {
+    [Table("TB_Admins")]
     public sealed class Admin : UserBase
     {
-        public Clinica Clinica { get; private set; }
-        public int ClinicaId { get; private set; }
+        public int ClinicaId { get; set; }
     }
 }

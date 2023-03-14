@@ -9,17 +9,16 @@ namespace Digipets.API.Context
         public DigipetsAPIContext(DbContextOptions<DigipetsAPIContext> options) : base(options) { }
 
         //public DbSet<Admin> TB_Admins { get; set; }
-        public DbSet<Animal> Animais { get; set; }
-        public DbSet<Clinica> TB_Clinicas { get; set; }
+        // public DbSet<Animal> Animais { get; set; }
+        public DbSet<Clinica> Clinicas { get; set; }
         //public DbSet<Endereco> TB_Enderecos { get; set; }
-        public DbSet<Tutor> Tutores { get; set; }
-        public DbSet<Vacina> Vacinas { get; set; }
-        public DbSet<Veterinario> Veterinarios { get; set; }
+        //public DbSet<Tutor> Tutores { get; set; }
+        //public DbSet<Vacina> Vacinas { get; set; }
+        //public DbSet<Veterinario> Veterinarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<Clinica>()
-                .ToTable("TB_Clinicas")
                 .Property(c => c.Nome).HasMaxLength(50)
                 .HasColumnOrder(2);
 
@@ -44,16 +43,12 @@ namespace Digipets.API.Context
                 .HasColumnOrder(7);
 
             mb.Entity<Clinica>()
-                .HasOne(c => c.Endereco)
-                .WithOne(e => e.Clinica);
+                .HasOne(c => c.Endereco);
 
             mb.Entity<Clinica>()
-                .HasOne(c => c.Admin)
-                .WithOne(a => a.Clinica);
+                .HasOne(c => c.Admin);
 
-            mb.Entity<Clinica>()
-                .HasMany(c => c.Veterinarios)
-                .WithOne(v => v.Clinica);
+            
 
             //base.OnModelCreating(mb);
         }

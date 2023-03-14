@@ -4,6 +4,7 @@ using Digipets.API.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Digipets.API.Migrations
 {
     [DbContext(typeof(DigipetsAPIContext))]
-    partial class DigipetsAPIContextModelSnapshot : ModelSnapshot
+    [Migration("20230314022740_FluentAPIMigration1.3")]
+    partial class FluentAPIMigration13
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,7 +53,7 @@ namespace Digipets.API.Migrations
                     b.HasIndex("ClinicaId")
                         .IsUnique();
 
-                    b.ToTable("TB_Admins");
+                    b.ToTable("Admin");
                 });
 
             modelBuilder.Entity("Digipets.API.Entities.Clinica", b =>
@@ -99,7 +102,7 @@ namespace Digipets.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TB_Clinicas");
+                    b.ToTable("TB_Clinicas", (string)null);
                 });
 
             modelBuilder.Entity("Digipets.API.Entities.Endereco", b =>
@@ -124,10 +127,6 @@ namespace Digipets.API.Migrations
                     b.Property<int>("ClinicaId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Estado")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Numero")
                         .HasColumnType("int");
 
@@ -140,7 +139,7 @@ namespace Digipets.API.Migrations
                     b.HasIndex("ClinicaId")
                         .IsUnique();
 
-                    b.ToTable("TB_Enderecos");
+                    b.ToTable("Endereco");
                 });
 
             modelBuilder.Entity("Digipets.API.Entities.Admin", b =>

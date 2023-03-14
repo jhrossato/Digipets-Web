@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\workspace-vs\\Digipet\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj": {}
+    "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\workspace-vs\\Digipet\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj": {
+    "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\workspace-vs\\Digipet\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
+        "projectUniqueName": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
         "projectName": "Digipets.API",
-        "projectPath": "C:\\Dev\\workspace-vs\\Digipet\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
-        "packagesPath": "C:\\Users\\Anna\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\workspace-vs\\Digipet\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\obj\\",
+        "projectPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\Digipets.API.csproj",
+        "packagesPath": "C:\\Users\\Joao Henrique\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Joao Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
