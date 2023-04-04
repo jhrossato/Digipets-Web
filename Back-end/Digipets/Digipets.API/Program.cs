@@ -1,4 +1,4 @@
-using Digipets.API.Context;
+using Digipets.Infra.IoC;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,8 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var SQLConnection = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<DigipetsAPIContext>(options => options.UseSqlServer(SQLConnection));
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
