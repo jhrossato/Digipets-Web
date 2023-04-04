@@ -8,22 +8,22 @@ export const compactNavigation: IMenu[] = [
     children: [
       {
         text: 'Adicionar Pet',
-        routerLink: '/clientes/adicionar',
+        routerLink: 'pet',
       },
       {
         text: 'Remover Pet',
-        routerLink: '/clientes/adicionar',
+        routerLink: '/pet/remover',
       },
     ],
   },
   {
     text: 'Vacina',
     icon: 'fa-solid fa-syringe',
-    routerLink: 'admin',
+    routerLink: 'vacina',
   },
   {
     text: 'Tutor',
     icon: 'fa-solid fa-user',
-    routerLink: 'admin',
+    routerLink: 'tutor',
   },
 ];

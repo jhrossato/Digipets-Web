@@ -8,5 +8,5 @@ import { IMenu } from 'src/app/core/interfaces/IMenu';
 })
 export class SidenavComponent {
   @Input() navigationMenu: IMenu[] | undefined;
-  showFiller = false;
+  showFiller = true;
 }

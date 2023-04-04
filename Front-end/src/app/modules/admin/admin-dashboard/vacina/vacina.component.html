@@ -1,0 +1,35 @@
+<mat-card class=" w-full">
+  <mat-card-header class="rounded-t-lg"> Adicionar Vacina </mat-card-header>
+  <form [formGroup]="formPet" (submit)="submitForm()" class="m-4 grid grid-cols-8 p-2 gap-2">
+    <div class="col-start-3 col-end-7">
+      <mat-form-field class="w-full">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" />
+      </mat-form-field>
+    </div>
+    <div class="col-start-3 col-end-7">
+      <mat-form-field class="w-full">
+        <mat-label>Tipo</mat-label>
+        <input matInput formControlName="tipo" />
+      </mat-form-field>
+    </div>
+    <div class="col-start-3 col-end-7">
+      <mat-form-field class="w-full">
+        <mat-label>Dose</mat-label>
+        <input matInput formControlName="dose" />
+      </mat-form-field>
+    </div>
+    <div class="col-start-3 col-end-7">
+      <mat-form-field class="w-full">
+        <mat-label>Data aplicacao</mat-label>
+        <input matInput formControlName="dataAplicacao" />
+      </mat-form-field>
+    </div>
+   
+    <div class="col-start-1 col-end-8 flex justify-end">
+      <button type="submit" class="btn-dash btn-dash-blue mt-10  ">
+        Cadastrar
+      </button>
+    </div>
+  </form>
+</mat-card>

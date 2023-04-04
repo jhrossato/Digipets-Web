@@ -6,6 +6,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { RouterModule } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [SidenavComponent],
   imports: [
@@ -15,7 +17,9 @@ import { RouterModule } from '@angular/router';
     MatListModule,
     MatExpansionModule,
     RouterModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   exports: [SidenavComponent],
 })
-export class SharedModule {}
+export class SharedModule { }

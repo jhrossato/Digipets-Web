@@ -1,5 +1,5 @@
-<mat-drawer-container class="h-full" autosize>
-  <mat-drawer #drawer class="drawer" mode="side">
+<mat-drawer-container class="h-full bg-dashboar" autosize>
+  <mat-drawer #drawer class="drawer" opened="true" mode="side">
     <div class="logo-drawer flex flex-col items-center justify-center">
       <img src="assets/logo/logo.png" alt="logo" class="w-14" />
       <h1 class="logo">Digipets</h1>
@@ -7,28 +7,31 @@
     <mat-divider></mat-divider>
     <mat-nav-list>
       <ng-container *ngFor="let menu of navigationMenu; index as i">
-        <ng-container
-          [ngTemplateOutlet]="menu.children ? childMenu : parentMenu"
-          [ngTemplateOutletContext]="{ menu: menu }"
-        >
+        <ng-container [ngTemplateOutlet]="menu.children ? childMenu : parentMenu"
+          [ngTemplateOutletContext]="{ menu: menu }">
         </ng-container>
       </ng-container>
     </mat-nav-list>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
-  </div>
+  <mat-drawer-content>
+    <mat-toolbar>
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+    </mat-toolbar>
+    <div class="pt-10 pl-5 pr-5 ">
+      <mat-card class="wd rounded-2xl ">
+        <!-- <mat-card-header class="rounded-t-lg"> Cadastrar Pet </mat-card-header> -->
+        <ng-content></ng-content>
+      </mat-card>
+    </div>
+  </mat-drawer-content>
 </mat-drawer-container>
 
 <ng-template #parentMenu let-menu="menu">
-  <mat-list-item
-    [routerLink]="menu.routerLink"
-    routerLinkActive="is-active"
-    [routerLinkActiveOptions]="{ exact: true }"
-  >
+  <mat-list-item [routerLink]="menu.routerLink" routerLinkActive="is-active"
+    [routerLinkActiveOptions]="{ exact: true }">
     <i matListItemIcon [ngClass]="menu.icon"></i>
     <div matListItemTitle>
       {{ menu.text }}
@@ -48,12 +51,8 @@
     </mat-expansion-panel-header>
 
     <mat-nav-list>
-      <mat-list-item
-        [routerLink]="submenu.routerLink"
-        *ngFor="let submenu of menu.children"
-        routerLinkActive="is-active"
-        [routerLinkActiveOptions]="{ exact: true }"
-      >
+      <mat-list-item [routerLink]="submenu.routerLink" *ngFor="let submenu of menu.children"
+        routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
         <div matListItemTitle>
           {{ submenu.text }}
         </div>
