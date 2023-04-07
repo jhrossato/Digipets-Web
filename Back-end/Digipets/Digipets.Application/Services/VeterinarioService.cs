@@ -15,10 +15,10 @@ namespace Digipets.Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task Create(VeterinarioDTO veterinario)
+        public async Task<VeterinarioDTO> Create(VeterinarioDTO veterinario)
         {
             var veterinarioEntity = _mapper.Map<Veterinario>(veterinario);
-            await _repository.Create(veterinarioEntity);
+            return _mapper.Map<VeterinarioDTO>(await _repository.Create(veterinarioEntity));
         }
 
         public async Task Delete(VeterinarioDTO veterinario)
@@ -39,10 +39,11 @@ namespace Digipets.Application.Services
             return _mapper.Map<IEnumerable<VeterinarioDTO>>(veterinarioEntity);
         }
 
-        public async Task Update(VeterinarioDTO veterinario)
+        public async Task<VeterinarioDTO> Update(VeterinarioDTO veterinario)
         {
             var veterinarioEntity = _mapper.Map<Veterinario>(veterinario);
-            await _repository.Update(veterinarioEntity);
+            return _mapper.Map<VeterinarioDTO>(await _repository.Update(veterinarioEntity));
+            
         }
     }
 }

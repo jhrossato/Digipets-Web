@@ -7,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Digipets.Application.Services;
 using Digipets.Application.Interfaces;
+using Microsoft.AspNetCore.Identity;
+using Digipets.Domain.Account;
+using Digipets.Infra.Data.Identity;
 
 namespace Digipets.Infra.IoC
 {
@@ -18,6 +21,10 @@ namespace Digipets.Infra.IoC
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName))
             );
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<IVeterinarioRepository, VeterinarioRepository>();
             services.AddScoped<ITutorRepository, TutorRepository>();
@@ -32,8 +39,15 @@ namespace Digipets.Infra.IoC
             services.AddScoped<IVacinaService, VacinaService>();
             services.AddScoped<IVacinaAplicadaService, VacinaAplicadaService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+            services.AddScoped<IAuthenticate, AuthenticateService>();
+            services.AddScoped<ISeedRoleInitial, SeedRoleInitial>();
 
             return services;
+        }
+
+        public static IServiceCollection AddSeed(ISeedRoleInitial seedRoleInitial)
+        {
+
         }
     }
 }

@@ -95,3 +95,8 @@ D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\obj\Debug\net6.0\refint\Digip
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\obj\Debug\net6.0\Digipets.API.pdb
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\obj\Debug\net6.0\Digipets.API.genruntimeconfig.cache
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\obj\Debug\net6.0\ref\Digipets.API.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

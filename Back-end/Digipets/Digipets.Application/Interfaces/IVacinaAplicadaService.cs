@@ -6,8 +6,8 @@ namespace Digipets.Application.Interfaces
     {
         Task<IEnumerable<VacinaAplicadaDTO>> GetVacinasByAnimalId(int id);
         Task<VacinaAplicadaDTO> GetById(int id);
-        Task Create(VacinaAplicadaDTO vacina);
-        Task Update(VacinaAplicadaDTO vacina);
+        Task<VacinaAplicadaDTO> Create(VacinaAplicadaDTO vacina);
+        Task<VacinaAplicadaDTO> Update(VacinaAplicadaDTO vacina);
         Task Delete(VacinaAplicadaDTO vacina);
     }
 }

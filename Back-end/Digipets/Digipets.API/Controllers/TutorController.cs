@@ -35,7 +35,10 @@ namespace Digipets.API.Controllers
             if (tutor is null)
                 return BadRequest();
 
-            await _tutorService.Update(tutor);
+            if (tutor.Id is 0)
+                return BadRequest("O id não pode ser vazio");
+
+            tutor = await _tutorService.Update(tutor);
             return new CreatedAtRouteResult(new { id = tutor.Id }, tutor);
 
         }
@@ -64,7 +67,7 @@ namespace Digipets.API.Controllers
             if (animal is null)
                 return BadRequest();
             animal.TutorId = id;
-            await _animalService.Create(animal);
+            animal = await _animalService.Create(animal);
             return new CreatedAtRouteResult(new { id = animal.Id }, animal);
         }
     }

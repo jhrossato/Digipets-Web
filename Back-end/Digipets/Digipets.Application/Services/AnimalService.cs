@@ -15,10 +15,10 @@ namespace Digipets.Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task Create(AnimalDTO animal)
+        public async Task<AnimalDTO> Create(AnimalDTO animal)
         {
             var animalEntity = _mapper.Map<Animal>(animal);
-            await _repository.Create(animalEntity);
+            return _mapper.Map<AnimalDTO>(await _repository.Create(animalEntity));
         }
 
         public async Task Delete(AnimalDTO animal)
@@ -39,10 +39,10 @@ namespace Digipets.Application.Services
             return _mapper.Map<AnimalDTO>(animalEntity);
         }
 
-        public async Task Update(AnimalDTO animal)
+        public async Task<AnimalDTO> Update(AnimalDTO animal)
         {
             var animalEntity = _mapper.Map<Animal>(animal);
-            await _repository.Update(animalEntity);
+            return _mapper.Map<AnimalDTO>(await _repository.Update(animalEntity));
         }
     }
 }

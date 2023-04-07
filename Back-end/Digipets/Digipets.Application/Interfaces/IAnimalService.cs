@@ -6,8 +6,8 @@ namespace Digipets.Application.Interfaces
     {
         Task<IEnumerable<AnimalDTO>> GetAnimaisByTutorId(int id);
         Task<AnimalDTO> GetById(int id);
-        Task Create(AnimalDTO animal);
-        Task Update(AnimalDTO animal);
+        Task<AnimalDTO> Create(AnimalDTO animal);
+        Task<AnimalDTO> Update(AnimalDTO animal);
         Task Delete(AnimalDTO animal);
     }
 }

@@ -20,10 +20,10 @@ namespace Digipets.Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task Create(VacinaAplicadaDTO vacina)
+        public async Task<VacinaAplicadaDTO> Create(VacinaAplicadaDTO vacina)
         {
             var vacinaAplicadaEntity = _mapper.Map<VacinaAplicada>(vacina);
-            await _repository.Create(vacinaAplicadaEntity);
+            return _mapper.Map<VacinaAplicadaDTO>(await _repository.Create(vacinaAplicadaEntity));
         }
 
         public async Task Delete(VacinaAplicadaDTO vacina)
@@ -44,10 +44,10 @@ namespace Digipets.Application.Services
             return _mapper.Map<IEnumerable<VacinaAplicadaDTO>>(vacinaAplicadaEntity);
         }
 
-        public async Task Update(VacinaAplicadaDTO vacina)
+        public async Task<VacinaAplicadaDTO> Update(VacinaAplicadaDTO vacina)
         {
             var vacinaAplicadaEntity = _mapper.Map<VacinaAplicada>(vacina);
-            await _repository.Update(vacinaAplicadaEntity);
+            return _mapper.Map<VacinaAplicadaDTO>(await _repository.Update(vacinaAplicadaEntity));
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Digipets.Application.DTOs;
 using Digipets.Application.Interfaces;
+using Digipets.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Digipets.API.Controllers
@@ -28,7 +29,10 @@ namespace Digipets.API.Controllers
             if (animal is null)
                 return BadRequest();
 
-            await _animalService.Update(animal);
+            if (animal.Id is 0)
+                return BadRequest("O id não pode ser vazio");
+
+            animal = await _animalService.Update(animal);
             return new CreatedAtRouteResult(new { id = animal.Id }, animal);
 
         }
@@ -57,7 +61,7 @@ namespace Digipets.API.Controllers
             if (vacina is null)
                 return BadRequest();
             vacina.AnimalId = id;
-            await _vacinaAplicadaService.Create(vacina);
+            vacina = await _vacinaAplicadaService.Create(vacina);
             return new CreatedAtRouteResult(new { id = vacina.Id }, vacina);
         }
     }

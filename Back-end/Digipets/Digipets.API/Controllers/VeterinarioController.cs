@@ -38,28 +38,32 @@ namespace Digipets.API.Controllers
         [HttpPost]
         public async Task<ActionResult<VeterinarioDTO>> Post(VeterinarioDTO veterinario)
         {
-            if (veterinario is null)
+            if (!ModelState.IsValid)
                 return BadRequest();
 
-            await _veterinarioService.Create(veterinario);
+            veterinario = await _veterinarioService.Create(veterinario);
             return new CreatedAtRouteResult(new { id = veterinario.Id }, veterinario);
         }
         [HttpPost("{id:int}/Tutores")]
         public async Task<ActionResult<TutorDTO>> PostNewTutor(int id, TutorDTO tutor)
         {
-            if (tutor is null)
+            if (!ModelState.IsValid)
                 return BadRequest();
+
             tutor.VeterinarioId = id;
-            await _tutorService.Create(tutor);
+            tutor = await _tutorService.Create(tutor);
             return new CreatedAtRouteResult(new { id = tutor.Id }, tutor);
         }
         [HttpPut]
         public async Task<ActionResult<VeterinarioDTO>> Put(VeterinarioDTO veterinario)
         {
-            if (veterinario is null)
+            if (!ModelState.IsValid)
                 return BadRequest();
 
-            await _veterinarioService.Update(veterinario);
+            if(veterinario.Id is 0)
+                return BadRequest("O id não pode ser vazio");
+
+            veterinario = await _veterinarioService.Update(veterinario);
             return new CreatedAtRouteResult(new { id = veterinario.Id }, veterinario);
 
         }

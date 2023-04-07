@@ -15,10 +15,10 @@ namespace Digipets.Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task Create(TutorDTO tutor)
+        public async Task<TutorDTO> Create(TutorDTO tutor)
         {
             var tutorEntity = _mapper.Map<Tutor>(tutor);
-            await _repository.Create(tutorEntity);
+            return _mapper.Map<TutorDTO>(await _repository.Create(tutorEntity));
         }
 
         public async Task Delete(TutorDTO tutor)
@@ -45,10 +45,10 @@ namespace Digipets.Application.Services
             return _mapper.Map<IEnumerable<TutorDTO>>(tutoresEntity);
         }
 
-        public async Task Update(TutorDTO tutor)
+        public async Task<TutorDTO> Update(TutorDTO tutor)
         {
             var tutoresEntity = _mapper.Map<Tutor>(tutor);
-            await _repository.Update(tutoresEntity);
+            return _mapper.Map<TutorDTO>(await _repository.Update(tutoresEntity));
         }
     }
 }
