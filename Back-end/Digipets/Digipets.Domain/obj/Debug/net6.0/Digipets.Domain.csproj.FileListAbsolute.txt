@@ -10,3 +10,15 @@ D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\refint\Digipets.Domain.dll
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.pdb
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\ref\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\bin\Debug\net6.0\Digipets.Domain.deps.json
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\bin\Debug\net6.0\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\bin\Debug\net6.0\Digipets.Domain.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.csproj.AssemblyReference.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.AssemblyInfoInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.AssemblyInfo.cs
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.csproj.CoreCompileInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\refint\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\Digipets.Domain.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Domain\obj\Debug\net6.0\ref\Digipets.Domain.dll

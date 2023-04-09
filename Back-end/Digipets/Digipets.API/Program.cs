@@ -1,4 +1,6 @@
+using Digipets.Infra.Data.Identity;
 using Digipets.Infra.IoC;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,24 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
+
+SeedDatabase();
+
+void SeedDatabase()
+{
+    using (var scope = app.Services.CreateScope())
+        try
+        {
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            SeedRoleInitial seedRoleInitial = new SeedRoleInitial(roleManager);
+            seedRoleInitial.SeedRoles();
+        }
+        catch
+        {
+            throw;
+        }
+}
+    
 
 app.UseCors(builder =>
 {

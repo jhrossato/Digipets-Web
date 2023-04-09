@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KLMy7h0jXO9hKdaCDwYusStqmepapzlfsVcTFYSDseTSWzRoq4+/fug99he+cGTQlttGGnHltGy+sA2fwuT1xg==",
+  "dgSpecHash": "bBl4ucfQClegiaTA20zzSYY/xz6bK05CLxHh77nDMduDq2/Ka6NHTvzShFuN1Rso23L0i2+rg2hLuIHUOrlQJA==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
+  "projectFilePath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Joao Henrique\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\Joao Henrique\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\laris\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\laris\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

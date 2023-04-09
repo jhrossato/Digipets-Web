@@ -24,9 +24,9 @@ namespace Digipets.Infra.Data.Repositories
                 {
                     ApplicationUser user = new ApplicationUser()
                     {
-                        UserName = veterinario.Nome,
+                        UserName = veterinario.Email,
                         Email = veterinario.Email,
-                        NormalizedUserName = veterinario.Nome.ToUpper(),
+                        NormalizedUserName = veterinario.Email.ToUpper(),
                         NormalizedEmail = veterinario.Email.ToUpper(),
                         EmailConfirmed = true,
                         LockoutEnabled = false,

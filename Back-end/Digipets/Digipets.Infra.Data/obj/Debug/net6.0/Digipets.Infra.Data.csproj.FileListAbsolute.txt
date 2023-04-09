@@ -15,3 +15,20 @@ D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\refin
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.pdb
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.genruntimeconfig.cache
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\ref\Digipets.Infra.Data.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Infra.Data.deps.json
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Infra.Data.runtimeconfig.json
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Infra.Data.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Infra.Data.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Debug\net6.0\Digipets.Domain.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.AssemblyInfo.cs
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.csproj.CopyComplete
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\refint\Digipets.Infra.Data.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\Digipets.Infra.Data.genruntimeconfig.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Debug\net6.0\ref\Digipets.Infra.Data.dll

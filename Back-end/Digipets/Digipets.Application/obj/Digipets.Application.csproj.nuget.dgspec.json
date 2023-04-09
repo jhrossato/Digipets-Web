@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj": {}
+    "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj": {
+    "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
+        "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
         "projectName": "Digipets.Application",
-        "projectPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
-        "packagesPath": "C:\\Users\\Joao Henrique\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\obj\\",
+        "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\Digipets.Application.csproj",
+        "packagesPath": "C:\\Users\\laris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Joao Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj": {
-                "projectPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj"
+              "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj": {
+                "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj"
               }
             }
           }
@@ -65,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj": {
+    "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj",
         "projectName": "Digipets.Domain",
-        "projectPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj",
-        "packagesPath": "C:\\Users\\Joao Henrique\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\obj\\",
+        "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\Digipets.Domain.csproj",
+        "packagesPath": "C:\\Users\\laris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\Digipets joao\\Digipets-Web\\Back-end\\Digipets\\Digipets.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Joao Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

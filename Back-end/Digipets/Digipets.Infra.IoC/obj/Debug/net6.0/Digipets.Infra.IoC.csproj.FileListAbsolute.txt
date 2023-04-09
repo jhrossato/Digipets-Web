@@ -19,3 +19,24 @@ D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\refint
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.pdb
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.genruntimeconfig.cache
 D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\ref\Digipets.Infra.IoC.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.csproj.AssemblyReference.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.AssemblyInfo.cs
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\refint\Digipets.Infra.IoC.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.IoC.deps.json
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.IoC.runtimeconfig.json
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.IoC.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.IoC.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Application.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Domain.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.Data.dll
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Application.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Domain.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\bin\Debug\net6.0\Digipets.Infra.Data.pdb
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.csproj.CopyComplete
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\Digipets.Infra.IoC.genruntimeconfig.cache
+C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Infra.IoC\obj\Debug\net6.0\ref\Digipets.Infra.IoC.dll

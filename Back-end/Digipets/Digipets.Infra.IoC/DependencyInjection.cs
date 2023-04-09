@@ -44,10 +44,5 @@ namespace Digipets.Infra.IoC
 
             return services;
         }
-
-        public static IServiceCollection AddSeed(ISeedRoleInitial seedRoleInitial)
-        {
-
-        }
     }
 }
