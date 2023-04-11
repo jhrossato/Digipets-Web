@@ -20,28 +20,9 @@ namespace Digipets.Infra.Data.Repositories
         {
             try
             {
-                if (_userManager.FindByEmailAsync(veterinario.Email).Result is null)
-                {
-                    ApplicationUser user = new ApplicationUser()
-                    {
-                        UserName = veterinario.Email,
-                        Email = veterinario.Email,
-                        NormalizedUserName = veterinario.Email.ToUpper(),
-                        NormalizedEmail = veterinario.Email.ToUpper(),
-                        EmailConfirmed = true,
-                        LockoutEnabled = false,
-                        SecurityStamp = Guid.NewGuid().ToString()
-                    };
-                    IdentityResult result = await _userManager.CreateAsync(user, veterinario.Senha);
-
-                    if (result.Succeeded)
-                        _userManager.AddToRoleAsync(user, "Admin").Wait();
-
-                    _context.Add(veterinario);
-                    await _context.SaveChangesAsync();
-                    return veterinario;
-                }
-                return null;
+                _context.Add(veterinario);
+                await _context.SaveChangesAsync();
+                return veterinario;
             }
             catch (DbUpdateException ex)
             {

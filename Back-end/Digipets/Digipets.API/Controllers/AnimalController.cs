@@ -1,12 +1,14 @@
 ﻿using Digipets.Application.DTOs;
 using Digipets.Application.Interfaces;
 using Digipets.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Digipets.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class AnimalController : Controller
     {
         private readonly IAnimalService _animalService;

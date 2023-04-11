@@ -14,6 +14,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructure(builder.Configuration);
 
+builder.Services.AddInfrastructureJWT(builder.Configuration);
+
+builder.Services.AddInfrastructureSwagger();
+
 var app = builder.Build();
 
 SeedDatabase();
@@ -49,6 +53,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseStatusCodePages();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

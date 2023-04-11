@@ -7,6 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Digipets.API.Controllers
 {
@@ -22,6 +23,7 @@ namespace Digipets.API.Controllers
                 throw new ArgumentNullException(nameof(authentication));
             _configuration = configuration;
         }
+        [AllowAnonymous]
         [HttpPost("Login")]
         public async Task<ActionResult<UserToken>> Login([FromBody] LoginModel user)
         {
@@ -33,9 +35,7 @@ namespace Digipets.API.Controllers
             {
                 ModelState.AddModelError(string.Empty, "Login inválido");
                 return BadRequest(ModelState);
-            }
-
-                
+            }                
         }
 
         private UserToken GenerateToken(LoginModel user)

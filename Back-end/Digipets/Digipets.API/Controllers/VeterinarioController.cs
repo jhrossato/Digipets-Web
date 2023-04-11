@@ -1,20 +1,25 @@
 ﻿using Digipets.Application.DTOs;
 using Digipets.Application.Interfaces;
 using Digipets.Application.Services;
+using Digipets.Domain.Account;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Digipets.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class VeterinarioController : Controller
     {
         private readonly IVeterinarioService _veterinarioService;
         private readonly ITutorService _tutorService;
-        public VeterinarioController(IVeterinarioService veterinarioService, ITutorService tutorService)
+        private readonly IAuthenticate _authentication;
+        public VeterinarioController(IVeterinarioService veterinarioService, ITutorService tutorService, IAuthenticate authentication)
         {
             _veterinarioService = veterinarioService;
             _tutorService = tutorService;
+            _authentication = authentication;
         }
         [HttpGet]
         public async Task<ActionResult<IEnumerable<VeterinarioDTO>>> GetAll()
@@ -36,13 +41,24 @@ namespace Digipets.API.Controllers
             return tutor is null ? NotFound() : Ok(tutor);
         }
         [HttpPost]
+        [AllowAnonymous]
         public async Task<ActionResult<VeterinarioDTO>> Post(VeterinarioDTO veterinario)
         {
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            veterinario = await _veterinarioService.Create(veterinario);
-            return new CreatedAtRouteResult(new { id = veterinario.Id }, veterinario);
+            var result = await _authentication.RegisterVeterinario(veterinario.Email, veterinario.Senha);
+
+            if (result)
+            {
+                veterinario = await _veterinarioService.Create(veterinario);
+                return new CreatedAtRouteResult(new { id = veterinario.Id }, veterinario);
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Email ou senha inválido");
+                return BadRequest(ModelState);
+            }
         }
         [HttpPost("{id:int}/Tutores")]
         public async Task<ActionResult<TutorDTO>> PostNewTutor(int id, TutorDTO tutor)
@@ -60,7 +76,7 @@ namespace Digipets.API.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            if(veterinario.Id is 0)
+            if (veterinario.Id is 0)
                 return BadRequest("O id não pode ser vazio");
 
             veterinario = await _veterinarioService.Update(veterinario);

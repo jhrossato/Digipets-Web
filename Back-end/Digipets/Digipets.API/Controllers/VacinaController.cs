@@ -2,12 +2,14 @@
 using Digipets.Application.Interfaces;
 using Digipets.Application.Services;
 using Digipets.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Digipets.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class VacinaController : Controller
     {
         private readonly IVacinaService _vacinaService;

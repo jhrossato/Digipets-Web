@@ -29,7 +29,7 @@ namespace Digipets.Infra.Data.Identity
             await _signInManager.SignOutAsync();
         }
 
-        public async Task<bool> RegisterUser(string email, string password)
+        public async Task<bool> RegisterVeterinario(string email, string password)
         {
             var applicationUser = new ApplicationUser
             {
@@ -40,7 +40,29 @@ namespace Digipets.Infra.Data.Identity
             var result = await _userManager.CreateAsync(applicationUser, password);
 
             if (result.Succeeded)
+            {
                 await _signInManager.SignInAsync(applicationUser, isPersistent: false);
+                _userManager.AddToRoleAsync(applicationUser, "Admin").Wait();
+            }
+
+            return result.Succeeded;
+        }
+
+        public async Task<bool> RegisterTutor(string email, string password)
+        {
+            var applicationUser = new ApplicationUser
+            {
+                UserName = email,
+                Email = email
+            };
+
+            var result = await _userManager.CreateAsync(applicationUser, password);
+
+            if (result.Succeeded)
+            {
+                await _signInManager.SignInAsync(applicationUser, isPersistent: false);
+                _userManager.AddToRoleAsync(applicationUser, "User").Wait();
+            }
 
             return result.Succeeded;
         }
