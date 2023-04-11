@@ -42,7 +42,7 @@ namespace Digipets.Infra.Data.Repositories
 
         public async Task<Tutor> GetById(int id)
         {
-            return await _context.tutores.FindAsync(id);
+            return await _context.tutores.Include(v => v.Endereco).FirstOrDefaultAsync(t => t.Id == id);
         }
 
         public async Task<IEnumerable<Tutor>> GetTutores()
