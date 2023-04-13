@@ -1,0 +1,61 @@
+<form [formGroup]="formPet" (submit)="submitForm()" class="flex flex-col gap-2">
+  <div class="flex flex-col">
+    <label htmlFor="username">Nome</label>
+    <input pInputText formControlName="nome" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Espécie</label>
+    <input pInputText formControlName="especie" />
+  </div>
+  <div class="flex flex-wrap mt-5 mb-5 gap-3">
+    <div class="flex align-items-center">
+      <p-radioButton formControlName="genero" [value]="true" inputId="ingredient1"></p-radioButton>
+      <label for="ingredient1" class="ml-2">Macho</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton formControlName="genero" [value]="false" inputId="ingredient2"></p-radioButton>
+      <label for="ingredient2" class="ml-2">Femea</label>
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Porte</label>
+    <input pInputText formControlName="porte" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Raça</label>
+    <input pInputText formControlName="raca" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Nascimento</label>
+    <input pInputText formControlName="nascimento" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Pelagem</label>
+    <input pInputText formControlName="pelagem" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Observacao</label>
+    <input pInputText formControlName="observacao" />
+  </div>
+
+
+
+  <div class="flex flex-wrap mt-5 gap-3">
+    <div class="flex align-items-center">
+      <p-radioButton formControlName="castrado" [value]="true" inputId="ingredient1"></p-radioButton>
+      <label for="ingredient1" class="ml-2">Castrado</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton formControlName="castrado" [value]="false" inputId="ingredient2"></p-radioButton>
+      <label for="ingredient2" class="ml-2">Não castrado</label>
+    </div>
+  </div>
+
+  <div class="col-start-1 col-end-8 flex justify-end">
+    <button type="submit" class="btn-dash btn-dash-blue mt-10  ">
+      Cadastrar
+    </button>
+  </div>
+</form>

@@ -10,13 +10,29 @@ import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material/stepper';
-import { TutorComponent } from './tutor/tutor.component';
 import { VacinaComponent } from './vacina/vacina.component';
-import { PetComponent } from './pet/pet.component';
+import { ApiService } from 'src/app/core/services/api.service';
+import { NewPetComponent } from './new-pet/new-pet.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { DropdownModule } from 'primeng/dropdown';
+import { CalendarModule } from 'primeng/calendar';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { TutorComponent } from './new-pet/tutor/tutor.component';
+import { PetComponent } from './new-pet/pet/pet.component';
+import { ListPetComponent } from './list-pet/list-pet.component';
+import { ListTutorComponent } from './list-tutor/list-tutor.component';
+import { VacinaAplicadaComponent } from './list-pet/vacina-aplicada/vacina-aplicada.component';
+import { JWT_OPTIONS, JwtHelperService } from '@auth0/angular-jwt';
+
 @NgModule({
-  declarations: [AdminDashboardComponent, TutorComponent, VacinaComponent, PetComponent],
+  declarations: [AdminDashboardComponent, TutorComponent, VacinaComponent, PetComponent, NewPetComponent, ListPetComponent, ListTutorComponent, VacinaAplicadaComponent],
   imports: [
     CommonModule,
     AdminDashboardRoutingModule,
@@ -27,8 +43,20 @@ import { PetComponent } from './pet/pet.component';
     MatCardModule,
     MatToolbarModule,
     ReactiveFormsModule,
-    MatStepperModule
+    MatStepperModule,
+    InputTextModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+    MatAutocompleteModule,
+    RadioButtonModule,
+    DropdownModule,
+    CalendarModule,
+    FormsModule,
+    MatTableModule,
+    MatIconModule,
+    MatButtonModule
+
   ],
-  providers: [TaskService],
+  providers: [TaskService, ApiService, JwtHelperService, provideNgxMask(),  { provide: JWT_OPTIONS, useValue: JWT_OPTIONS }],
 })
 export class AdminDashboardModule { }

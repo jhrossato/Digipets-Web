@@ -1,0 +1,98 @@
+<h1 mat-dialog-title> {{ isDataNumber() ? "Novo Tutor" : "Editar Tutor"}}</h1>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="formTutor" (submit)="submitForm()" class="flex flex-col gap-2">
+    <div class="flex flex-col">
+      <label htmlFor="username">Nome</label>
+      <input pInputText aria-describedby="username-help" formControlName="nome" />
+      <div *ngIf="formTutor.get('nome')?.invalid && formTutor.get('nome')?.dirty">
+        <span class="error-message">Por favor, digite um nome válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">RG</label>
+      <input pInputText aria-describedby="username-help" mask="00.000.000-0" formControlName="rg" />
+      <div *ngIf="formTutor.get('rg')?.invalid &&  formTutor.get('rg')?.dirty">
+        <span class="error-message">Por favor, digite um rg válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">CPF</label>
+      <input pInputText aria-describedby="username-help" mask="000.000.000-00" formControlName="cpf" />
+      <div *ngIf="formTutor.get('cpf')?.invalid &&  formTutor.get('cpf')?.dirty">
+        <span class="error-message">Por favor, digite um cpf válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Email</label>
+      <input pInputText aria-describedby="username-help" formControlName="email" />
+      <div *ngIf="formTutor.get('email')?.invalid &&  formTutor.get('email')?.dirty">
+        <span class="error-message">Por favor, digite um email válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Senha</label>
+      <input pInputText aria-describedby="username-help" formControlName="senha" />
+      <div *ngIf="formTutor.get('senha')?.invalid &&  formTutor.get('senha')?.dirty">
+        <span class="error-message">Por favor, digite um senha válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Telefone</label>
+      <input pInputText mask="(00) 00000-0000" aria-describedby="username-help" formControlName="telefone" />
+      <div *ngIf="formTutor.get('telefone')?.invalid &&  formTutor.get('telefone')?.dirty">
+        <span class="error-message">Por favor, digite um telefone válido.</span>
+      </div>
+    </div>
+    <div formGroupName='endereco' class="flex flex-col gap-2">
+      <div class="flex flex-col">
+        <label htmlFor="username">CEP</label>
+        <input pInputText aria-describedby="username-help" formControlName="cep" mask="00000-000" />
+        <div *ngIf="formTutor.get('endereco.cep')?.invalid &&  formTutor.get('endereco.cep')?.dirty">
+          <span class="error-message">Por favor, digite um CEP válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Rua</label>
+        <input pInputText aria-describedby="username-help" formControlName="rua" />
+        <div *ngIf="formTutor.get('endereco.rua')?.invalid &&  formTutor.get('endereco.rua')?.dirty">
+          <span class="error-message">Por favor, digite um rua válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Bairro</label>
+        <input pInputText aria-describedby="username-help" formControlName="bairro" />
+        <div *ngIf="formTutor.get('endereco.bairro')?.invalid &&  formTutor.get('endereco.bairro')?.dirty">
+          <span class="error-message">Por favor, digite um bairro válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Numero</label>
+        <input pInputText aria-describedby="username-help" formControlName="numero" />
+        <div *ngIf="formTutor.get('endereco.numero')?.invalid &&  formTutor.get('endereco.numero')?.dirty">
+          <span class="error-message">Por favor, digite um numero válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Cidade</label>
+        <input pInputText aria-describedby="username-help" formControlName="cidade" />
+        <div *ngIf="formTutor.get('endereco.cidade')?.invalid &&  formTutor.get('endereco.cidade')?.dirty">
+          <span class="error-message">Por favor, digite um cidade válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Estado</label>
+        <input pInputText aria-describedby="username-help" formControlName="estado" />
+        <div *ngIf="formTutor.get('endereco.estado')?.invalid &&  formTutor.get('endereco.estado')?.dirty">
+          <span class="error-message">Por favor, digite um estado válido.</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-start-1 col-end-8 flex justify-end">
+      <button type="submit" class="btn-dash btn-dash-blue p-3 mt-10 ">
+        {{ isDataNumber() ? "Cadastrar" : "Editar"}}
+
+      </button>
+    </div>
+  </form>
+
+</mat-dialog-content>

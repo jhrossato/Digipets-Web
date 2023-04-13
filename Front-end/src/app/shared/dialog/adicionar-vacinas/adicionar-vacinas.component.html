@@ -1,0 +1,30 @@
+<h1 mat-dialog-title> Vacina Pet</h1>
+<div class="flex flex-col items-center justify-center h-full p-5  gap-2">
+  <div class="flex flex-col gap-2">
+    <form [formGroup]="formVacinasApli" class="flex flex-col gap-2">
+      <div class="flex flex-col">
+        <label htmlFor="username">Dose</label>
+        <p-inputNumber model="decimal" formControlName="dose"></p-inputNumber>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Data aplicacao</label>
+        <div class="p-inputgroup">
+          <button type="button" pButton (click)="picker.open()"><i class="fa-regular fa-calendar-days"></i></button>
+          <input type="text" pInputText [matDatepicker]="picker" formControlName="dataAplicacao" />
+        </div>
+        <mat-datepicker #picker></mat-datepicker>
+      </div>
+    </form>
+    <label htmlFor="username">Vacinas</label>
+    <p-dropdown [(ngModel)]="setVacina" [options]="vacinas" view="month" optionLabel="nome"
+      [style]="{'width': '100%'}"></p-dropdown>
+  </div>
+  <div class="col-start-1 col-end-8 flex justify-end">
+    <button (click)="submitForm()" type="submit" class="btn-dash btn-dash-blue p-3 mt-10 ">
+      {{ isDataNumber() ? "Cadastrar" : "Editar"}}
+
+    </button>
+  </div>
+
+
+</div>

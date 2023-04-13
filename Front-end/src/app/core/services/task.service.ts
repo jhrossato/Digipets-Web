@@ -8,7 +8,7 @@ export class TaskService {
   constructor(private httpClient: HttpClient) {}
 
   getList<T>(url: string) {
-    console.log(url)
+    // console.log(url)
     return this.httpClient.get<T[]>(url).pipe();
   }
 }

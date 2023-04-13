@@ -1,29 +1,25 @@
 import { IMenu } from 'src/app/core/interfaces/IMenu';
 
 export const compactNavigation: IMenu[] = [
-  {
-    text: 'Pet',
+/*   {
+    text: 'Cadastros',
+    icon: 'fa-solid fa-paw',
+    routerLink: 'cadastros',
+  }, */
+
+/*   {
+    text: 'Veterinario',
     icon: 'fa-solid fa-paw',
     routerLink: '',
-    children: [
-      {
-        text: 'Adicionar Pet',
-        routerLink: 'pet',
-      },
-      {
-        text: 'Remover Pet',
-        routerLink: '/pet/remover',
-      },
-    ],
-  },
+  }, */
   {
-    text: 'Vacina',
+    text: 'Vacinas',
     icon: 'fa-solid fa-syringe',
-    routerLink: 'vacina',
+    routerLink: 'vacinas',
   },
   {
-    text: 'Tutor',
+    text: 'Tutores',
     icon: 'fa-solid fa-user',
-    routerLink: 'tutor',
+    routerLink: 'tutores',
   },
 ];

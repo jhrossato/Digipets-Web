@@ -11,8 +11,6 @@ import { compactNavigation } from './data/navigation-data';
 export class AdminDashboardComponent {
   navigation = compactNavigation;
   constructor(private httpService: TaskService) {
-    this.httpService.getList<IMenu>('/assets/menu.json').subscribe((valor) => {
-      console.log(valor);
-    });
+
   }
 }

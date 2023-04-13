@@ -5,6 +5,7 @@ import { UserDashboardRoutingModule } from './user-dashboard-routing.module';
 import { UserDashboardComponent } from './user-dashboard.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+
 @NgModule({
   declarations: [
     UserDashboardComponent
@@ -12,7 +13,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     CommonModule,
     UserDashboardRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+
   ]
 })
 export class UserDashboardModule { }

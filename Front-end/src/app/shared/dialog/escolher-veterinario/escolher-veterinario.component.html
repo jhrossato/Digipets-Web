@@ -1,0 +1,18 @@
+<div class="p-3">
+  <h1 mat-dialog-title>Escolha um veterinária</h1>
+  <mat-dialog-content align="center">
+    <mat-form-field class="w-full" appearance="fill">
+      <mat-label>Veterinários</mat-label>
+      <mat-select [(ngModel)]="veterinario">
+        <mat-option *ngFor="let veterinario of data" [value]="veterinario.id">
+          {{veterinario?.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <div class="card flex justify-content-center">
+      <p-button label="small" mat-button [mat-dialog-close]="veterinario"  *ngIf="veterinario" label="Submit"></p-button>
+    </div>
+  </mat-dialog-actions>
+</div>

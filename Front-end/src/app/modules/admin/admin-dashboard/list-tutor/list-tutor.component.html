@@ -1,0 +1,67 @@
+<mat-card-header>
+  <mat-card-title>Tutores</mat-card-title>
+</mat-card-header>
+<div class="flex flex-col items-end container-tabale p-5 gap-8">
+  <button pButton type="button" (click)="dialogCreateTutor()" label="Novo Tutor" class="p-button-success"></button>
+
+  <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+      <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+    </ng-container>
+    <ng-container matColumnDef="expand">
+      <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button aria-label="expand row"
+          (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+
+          <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+          <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+        <div class="detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+          <div class="grid grid-cols-4 gap-x-2">
+            <p class="flex flex-col m-0">Nome: <span>{{element.nome}}</span></p>
+            <p class="flex flex-col">Email: <span>{{element.email}}</span></p>
+            <p class="flex flex-col">Telefone: <span>{{element.telefone}}</span></p>
+            <p class="flex flex-col">CPF: <span>{{element.cpf}}</span></p>
+            <p class="flex flex-col">rg: <span>{{element.rg}}</span></p>
+            <p class="flex flex-col">Cidade: <span>{{element.endereco.cidade}}</span></p>
+            <p class="flex flex-col">Rua: <span>{{element.endereco.rua}}</span></p>
+            <p class="flex flex-col">Numero: <span>{{element.endereco.numero}}</span></p>
+            <p class="flex flex-col">Bairro: <span>{{element.endereco.bairro}}</span></p>
+            <p class="flex flex-col">Estado: <span>{{element.endereco.estado}}</span></p>
+            <p class="flex flex-col">Cep: <span>{{element.endereco.cep}}</span></p>
+          </div>
+          <div class="flex justify-center items-center">
+            <button (click)="dialogEditTutor(element)" mat-icon-button
+              aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button (click)="dialogRemoveTutor(element)" mat-icon-button
+              aria-label="Example icon button with a vertical three dot icon">
+              <mat-icon>delete</mat-icon>
+            </button>
+            <button (click)="tablePet(element.id)" mat-icon-button
+              aria-label="Example icon button with a vertical three dot icon">
+              <i matListItemIcon ngClass="fa-solid fa-paw"></i>
+            </button>
+          </div>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+  </table>
+
+</div>

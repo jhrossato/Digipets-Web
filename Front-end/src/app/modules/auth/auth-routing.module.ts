@@ -10,7 +10,6 @@ const routes: Routes = [
     component: AuthComponent,
     children: [
       { path: '', component: LoginComponent },
-      { path: 'cadastro', component: RegistrationComponent },
     ],
   },
 ];

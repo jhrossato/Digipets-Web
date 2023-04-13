@@ -16,13 +16,13 @@
 
   <mat-drawer-content>
     <mat-toolbar>
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
       </button>
+
     </mat-toolbar>
     <div class="pt-10 pl-5 pr-5 ">
-      <mat-card class="wd rounded-2xl ">
-        <!-- <mat-card-header class="rounded-t-lg"> Cadastrar Pet </mat-card-header> -->
+      <mat-card class="wd">
         <ng-content></ng-content>
       </mat-card>
     </div>

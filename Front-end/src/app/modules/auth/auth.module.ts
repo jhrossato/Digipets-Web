@@ -10,6 +10,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { MatStepperModule } from '@angular/material/stepper';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from 'src/app/core/services/api.service';
+import { InputTextModule } from 'primeng/inputtext';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 @NgModule({
   declarations: [LoginComponent, AuthComponent, RegistrationComponent],
   imports: [
@@ -20,6 +25,11 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatIconModule,
     ReactiveFormsModule,
     MatStepperModule,
-  ],
+    HttpClientModule,
+    InputTextModule,
+    MatDialogModule,
+    NgxMaskPipe,
+    NgxMaskDirective
+  ], providers: [ApiService,  provideNgxMask()]
 })
-export class AuthModule {}
+export class AuthModule { }
