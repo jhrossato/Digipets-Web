@@ -4,10 +4,10 @@ namespace Digipets.Application.Interfaces
 {
     public interface IVacinaAplicadaService
     {
-        Task<IEnumerable<VacinaAplicadaDTO>> GetVacinasByAnimalId(int id);
-        Task<VacinaAplicadaDTO> GetById(int id);
-        Task<VacinaAplicadaDTO> Create(VacinaAplicadaDTO vacina);
-        Task<VacinaAplicadaDTO> Update(VacinaAplicadaDTO vacina);
-        Task Delete(VacinaAplicadaDTO vacina);
+        Task<IEnumerable<VacinaAplicadaDetailsDTO>> GetVacinasByAnimalId(int id);
+        Task<VacinaAplicadaDetailsDTO> GetById(int id);
+        Task<VacinaAplicadaDetailsDTO> Create(VacinaAplicadaDTO vacina);
+        Task<VacinaAplicadaDetailsDTO> Update(VacinaAplicadaDTO vacina);
+        Task Delete(VacinaAplicadaDetailsDTO vacina);
     }
 }

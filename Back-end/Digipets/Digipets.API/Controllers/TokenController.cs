@@ -8,6 +8,8 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
+using Digipets.Application.Interfaces;
+using Digipets.Application.DTOs;
 
 namespace Digipets.API.Controllers
 {
@@ -17,11 +19,14 @@ namespace Digipets.API.Controllers
     {
         private readonly IAuthenticate _authentication;
         private readonly IConfiguration _configuration;
-        public TokenController(IAuthenticate authentication, IConfiguration configuration)
+        private readonly IVeterinarioService _veterinarioService;
+
+        public TokenController(IAuthenticate authentication, IConfiguration configuration, IVeterinarioService veterinarioService)
         {
             _authentication= authentication ??
                 throw new ArgumentNullException(nameof(authentication));
             _configuration = configuration;
+            _veterinarioService = veterinarioService;
         }
         [AllowAnonymous]
         [HttpPost("Login")]
@@ -30,7 +35,13 @@ namespace Digipets.API.Controllers
             var result = await _authentication.AuthenticateAsync(user.Email, user.Password);
 
             if (result)
+            {
+                var veterinarios = _veterinarioService.GetVeterinarios().Result;
+                var veterinario = veterinarios.Where(v => v.Email == user.Email).FirstOrDefault();
+                user.Id = veterinario.Id;
+
                 return GenerateToken(user);
+            }
             else
             {
                 ModelState.AddModelError(string.Empty, "Login inválido");
@@ -42,6 +53,7 @@ namespace Digipets.API.Controllers
         {
             var claims = new[]
             {
+                new Claim("id", user.Id.ToString()),
                 new Claim("email", user.Email),
                 new Claim("valor", "5fFLk6NQ0W5&"),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),

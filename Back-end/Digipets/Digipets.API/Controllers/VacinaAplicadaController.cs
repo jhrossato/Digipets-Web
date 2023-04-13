@@ -23,17 +23,18 @@ namespace Digipets.API.Controllers
             return vacinaAplicada is null ? NotFound() : Ok(vacinaAplicada);
 
         }
-        [HttpPut]
-        public async Task<ActionResult<VacinaAplicadaDTO>> Put(VacinaAplicadaDTO vacinaAplicada)
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<VacinaAplicadaDTO>> Put(int id, VacinaAplicadaDTO vacinaAplicada)
         {
             if (vacinaAplicada is null)
                 return BadRequest();
 
-            if (vacinaAplicada.Id is 0)
+            if (id is 0)
                 return BadRequest("O id não pode ser vazio");
 
-            vacinaAplicada = await _vacinaAplicadaService.Update(vacinaAplicada);
-            return new CreatedAtRouteResult(new { id = vacinaAplicada.Id }, vacinaAplicada);
+            VacinaAplicadaDetailsDTO vacinaAplicadaDetails = new();
+            vacinaAplicadaDetails = await _vacinaAplicadaService.Update(vacinaAplicada);
+            return new CreatedAtRouteResult(new { id = vacinaAplicadaDetails.Id }, vacinaAplicadaDetails);
 
         }
         [HttpDelete("{id:int}")]

@@ -58,13 +58,15 @@ namespace Digipets.API.Controllers
             return vacinas is null ? NotFound() : Ok(vacinas);
         }
         [HttpPost("{id:int}/Vacinas")]
-        public async Task<ActionResult<VacinaAplicadaDTO>> PostNewVacina(int id, VacinaAplicadaDTO vacina)
+        public async Task<ActionResult<VacinaAplicadaDetailsDTO>> PostNewVacina(int id, VacinaAplicadaDTO vacina)
         {
             if (vacina is null)
                 return BadRequest();
             vacina.AnimalId = id;
-            vacina = await _vacinaAplicadaService.Create(vacina);
-            return new CreatedAtRouteResult(new { id = vacina.Id }, vacina);
+            VacinaAplicadaDetailsDTO vacinaDetails = new();
+            vacinaDetails = await _vacinaAplicadaService.Create(vacina);
+            return Redirect($"/VacinaAplicada/{vacinaDetails.Id}");
+
         }
     }
 }

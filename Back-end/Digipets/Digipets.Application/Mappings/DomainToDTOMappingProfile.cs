@@ -13,7 +13,9 @@ namespace Digipets.Application.Mappings
             CreateMap<Endereco, EnderecoDTO>().ReverseMap();
             CreateMap<Animal, AnimalDTO>().ReverseMap();
             CreateMap<Vacina, VacinaDTO>().ReverseMap();
+            CreateMap<Vacina, VacinaDetailsDTO>().ReverseMap();
             CreateMap<VacinaAplicada, VacinaAplicadaDTO>().ReverseMap();
+            CreateMap<VacinaAplicada, VacinaAplicadaDetailsDTO>().ReverseMap();
         }
     }
 }

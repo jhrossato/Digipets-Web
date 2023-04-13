@@ -20,34 +20,34 @@ namespace Digipets.Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task<VacinaAplicadaDTO> Create(VacinaAplicadaDTO vacina)
+        public async Task<VacinaAplicadaDetailsDTO> Create(VacinaAplicadaDTO vacina)
         {
             var vacinaAplicadaEntity = _mapper.Map<VacinaAplicada>(vacina);
-            return _mapper.Map<VacinaAplicadaDTO>(await _repository.Create(vacinaAplicadaEntity));
+            return _mapper.Map<VacinaAplicadaDetailsDTO>(await _repository.Create(vacinaAplicadaEntity));
         }
 
-        public async Task Delete(VacinaAplicadaDTO vacina)
+        public async Task Delete(VacinaAplicadaDetailsDTO vacina)
         {
             var vacinaAplicadaEntity = _mapper.Map<VacinaAplicada>(vacina);
             await _repository.Delete(vacinaAplicadaEntity);
         }
 
-        public async Task<VacinaAplicadaDTO> GetById(int id)
+        public async Task<VacinaAplicadaDetailsDTO> GetById(int id)
         {
             var vacinaAplicadaEntity = await _repository.GetById(id);
-            return _mapper.Map<VacinaAplicadaDTO>(vacinaAplicadaEntity);
+            return _mapper.Map<VacinaAplicadaDetailsDTO>(vacinaAplicadaEntity);
         }
 
-        public async Task<IEnumerable<VacinaAplicadaDTO>> GetVacinasByAnimalId(int id)
+        public async Task<IEnumerable<VacinaAplicadaDetailsDTO>> GetVacinasByAnimalId(int id)
         {
             var vacinaAplicadaEntity = await _repository.GetVacinasByAnimalId(id);
-            return _mapper.Map<IEnumerable<VacinaAplicadaDTO>>(vacinaAplicadaEntity);
+            return _mapper.Map<IEnumerable<VacinaAplicadaDetailsDTO>>(vacinaAplicadaEntity);
         }
 
-        public async Task<VacinaAplicadaDTO> Update(VacinaAplicadaDTO vacina)
+        public async Task<VacinaAplicadaDetailsDTO> Update(VacinaAplicadaDTO vacina)
         {
             var vacinaAplicadaEntity = _mapper.Map<VacinaAplicada>(vacina);
-            return _mapper.Map<VacinaAplicadaDTO>(await _repository.Update(vacinaAplicadaEntity));
+            return _mapper.Map<VacinaAplicadaDetailsDTO>(await _repository.Update(vacinaAplicadaEntity));
         }
     }
 }
