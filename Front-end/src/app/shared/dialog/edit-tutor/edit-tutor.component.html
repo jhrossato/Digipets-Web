@@ -31,7 +31,7 @@
     </div>
     <div class="flex flex-col">
       <label htmlFor="username">Senha</label>
-      <input pInputText aria-describedby="username-help" formControlName="senha" />
+      <p-password  aria-describedby="username-help" formControlName="senha" />
       <div *ngIf="formTutor.get('senha')?.invalid &&  formTutor.get('senha')?.dirty">
         <span class="error-message">Por favor, digite um senha válido.</span>
       </div>

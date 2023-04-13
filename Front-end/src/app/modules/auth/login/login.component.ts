@@ -18,9 +18,9 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
   formLogin = this._fb.group({
-    email: ['joaogomes@gmail.com', { validators: [Validators.required, Validators.email] }],
+    email: ['', { validators: [Validators.required, Validators.email] }],
     password: [
-      'Qq12345*',
+      '',
       { validators: [Validators.required, Validators.minLength(8)] },
     ],
   });
