@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-
+  isAuthenticated = false;
   formLogin = this._fb.group({
     email: ['', { validators: [Validators.required, Validators.email] }],
     password: [
@@ -32,10 +32,16 @@ export class LoginComponent {
   ) { }
 
   onLogin() {
-    this.apiService.post(this.formLogin.value, "/Token/Login").subscribe(data => {
-      console.log(data)
-      this.onLoginPerformed(data)
-    });
+    this.apiService.post(this.formLogin.value, "/Token/Login").subscribe(
+      data => {
+        console.log(data)
+        this.onLoginPerformed(data)
+      },
+      error => {
+        console.log(error);
+        this.isAuthenticated = true
+      }
+    );
   }
   onLoginPerformed(token: any) {
     window.localStorage.setItem('token', token.token);

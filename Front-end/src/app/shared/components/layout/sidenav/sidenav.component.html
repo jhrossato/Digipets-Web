@@ -12,11 +12,16 @@
         </ng-container>
       </ng-container>
     </mat-nav-list>
+    <mat-divider></mat-divider>
+    <div class="flex mt-5 justify-center">
+      <button (click)="sair()">Sair</button>
+    </div>
   </mat-drawer>
 
   <mat-drawer-content>
     <mat-toolbar>
-      <button mat-icon-button class="example-icon" (click)="drawer.toggle()" aria-label="Example icon-button with menu icon">
+      <button mat-icon-button class="example-icon" (click)="drawer.toggle()"
+        aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
 

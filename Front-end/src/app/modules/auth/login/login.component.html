@@ -1,6 +1,9 @@
 <form [formGroup]="formLogin" class="md:w-80 m-auto">
   <div class="mt-6 flex flex-col items-center justify-center">
     <h1 class="welcome-logo">Bem vindo!</h1>
+    <div *ngIf="isAuthenticated">
+      <p class="error-message">Login inválido</p>
+    </div>
     <mat-form-field class="w-full" appearance="outline">
       <input
         matInput
