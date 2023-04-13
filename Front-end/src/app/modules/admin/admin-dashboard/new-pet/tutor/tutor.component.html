@@ -1,0 +1,53 @@
+<form [formGroup]="formPet" (submit)="submitForm()" class="flex flex-col gap-2">
+  <div class="flex flex-col">
+    <label htmlFor="username">Nome</label>
+    <input pInputText aria-describedby="username-help" formControlName="nome" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">RG</label>
+    <input pInputText  aria-describedby="username-help" mask="00.000.000-0" formControlName="rg" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">CPF</label>
+    <input pInputText aria-describedby="username-help" mask="000.000.000-00" formControlName="cpf" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Email</label>
+    <input pInputText aria-describedby="username-help" formControlName="email" />
+  </div>
+  <div class="flex flex-col">
+    <label htmlFor="username">Telefone</label>
+    <input pInputText  mask="(00) 00000-0000" aria-describedby="username-help" formControlName="telefone" />
+  </div>
+  <div formGroupName='endereco' class="flex flex-col gap-2">
+    <div class="flex flex-col">
+      <label htmlFor="username">CEP</label>
+      <input pInputText aria-describedby="username-help" formControlName="cep" mask="00000-000" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Rua</label>
+      <input pInputText aria-describedby="username-help" formControlName="rua" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Bairro</label>
+      <input pInputText aria-describedby="username-help" formControlName="bairro" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Numero</label>
+      <input pInputText aria-describedby="username-help" formControlName="numero" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Cidade</label>
+      <input pInputText aria-describedby="username-help" formControlName="cidade" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Estado</label>
+      <input pInputText aria-describedby="username-help" formControlName="estado" />
+    </div>
+  </div>
+  <div class="col-start-1 col-end-8 flex justify-end">
+    <button type="submit"  class="btn-dash btn-dash-blue mt-10  ">
+      Cadastrar
+    </button>
+  </div>
+</form>

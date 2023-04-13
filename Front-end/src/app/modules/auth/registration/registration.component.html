@@ -1,0 +1,102 @@
+<h1 mat-dialog-title>Criar Conta</h1>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="formVeterinario" (submit)="submitForm()" class="flex-col gap-2">
+    <div class="flex flex-col">
+      <label htmlFor="username">Nome</label>
+      <input pInputText aria-describedby="username-help" formControlName="nome" />
+      <div *ngIf="formVeterinario.get('nome')?.invalid && formVeterinario.get('nome')?.dirty">
+        <span class="error-message">Por favor, digite um nome válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">RG</label>
+      <input pInputText aria-describedby="username-help" mask="00.000.000-0" formControlName="rg" />
+      <div *ngIf="formVeterinario.get('rg')?.invalid &&  formVeterinario.get('rg')?.dirty">
+        <span class="error-message">Por favor, digite um rg válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">CPF</label>
+      <input pInputText aria-describedby="username-help" mask="000.000.000-00" formControlName="cpf" />
+      <div *ngIf="formVeterinario.get('cpf')?.invalid &&  formVeterinario.get('cpf')?.dirty">
+        <span class="error-message">Por favor, digite um cpf válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Email</label>
+      <input pInputText aria-describedby="username-help" formControlName="email" />
+      <div *ngIf="formVeterinario.get('email')?.invalid &&  formVeterinario.get('email')?.dirty">
+        <span class="error-message">Por favor, digite um email válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Senha</label>
+      <input pInputText aria-describedby="username-help" formControlName="senha" />
+      <div *ngIf="formVeterinario.get('senha')?.invalid &&  formVeterinario.get('senha')?.dirty">
+        <span class="error-message">Por favor, digite um senha válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Telefone</label>
+      <input pInputText mask="(00) 00000-0000" aria-describedby="username-help" formControlName="telefone" />
+      <div *ngIf="formVeterinario.get('telefone')?.invalid &&  formVeterinario.get('telefone')?.dirty">
+        <span class="error-message">Por favor, digite um telefone válido.</span>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">CRMV</label>
+      <input pInputText aria-describedby="username-help" formControlName="crmv" />
+      <div *ngIf="formVeterinario.get('crmv')?.invalid &&  formVeterinario.get('crmv')?.dirty">
+        <span class="error-message">Por favor, digite um CRMV válido.</span>
+      </div>
+    </div>
+    <div formGroupName='endereco' class="flex flex-col gap-2">
+      <div class="flex flex-col">
+        <label htmlFor="username">CEP</label>
+        <input pInputText aria-describedby="username-help" formControlName="cep" mask="00000-000" />
+        <div *ngIf="formVeterinario.get('endereco.cep')?.invalid &&  formVeterinario.get('endereco.cep')?.dirty">
+          <span class="error-message">Por favor, digite um CEP válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Rua</label>
+        <input pInputText aria-describedby="username-help" formControlName="rua" />
+        <div *ngIf="formVeterinario.get('endereco.rua')?.invalid &&  formVeterinario.get('endereco.rua')?.dirty">
+          <span class="error-message">Por favor, digite um rua válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Bairro</label>
+        <input pInputText aria-describedby="username-help" formControlName="bairro" />
+        <div *ngIf="formVeterinario.get('endereco.bairro')?.invalid &&  formVeterinario.get('endereco.bairro')?.dirty">
+          <span class="error-message">Por favor, digite um bairro válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Numero</label>
+        <input pInputText aria-describedby="username-help" formControlName="numero" />
+        <div *ngIf="formVeterinario.get('endereco.numero')?.invalid &&  formVeterinario.get('endereco.numero')?.dirty">
+          <span class="error-message">Por favor, digite um numero válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Cidade</label>
+        <input pInputText aria-describedby="username-help" formControlName="cidade" />
+        <div *ngIf="formVeterinario.get('endereco.cidade')?.invalid &&  formVeterinario.get('endereco.cidade')?.dirty">
+          <span class="error-message">Por favor, digite um cidade válido.</span>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <label htmlFor="username">Estado</label>
+        <input pInputText aria-describedby="username-help" formControlName="estado" />
+        <div *ngIf="formVeterinario.get('endereco.estado')?.invalid &&  formVeterinario.get('endereco.estado')?.dirty">
+          <span class="error-message">Por favor, digite um estado válido.</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-blue">Criar</button>
+    <p class="text-center mt-2">
+      <a>acessar sua Conta </a>
+    </p>
+  </form>
+</mat-dialog-content>

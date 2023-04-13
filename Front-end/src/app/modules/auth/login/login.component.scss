@@ -1,0 +1,26 @@
+.icon-input {
+  padding: 3px !important;
+  margin-right: 7px;
+  box-sizing: content-box;
+  border-radius: 5rem;
+  background: linear-gradient(
+    176deg,
+    rgba(39, 58, 255, 1) 12%,
+    rgba(4, 170, 255, 1) 69%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.fa-solid {
+  font-size: 16px;
+}
+
+.welcome-logo {
+  font-weight: 500;
+  color: #4f4f4f;
+}
+.btn {
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+<div class="flex flex-col items-center justify-center h-full p-5  g.ap-2">
+  <h1 mat-dialog-title>{{data ? "Editar Vacina": "Nova Vacina"}}</h1>
+  <form [formGroup]="formVacina" class="flex   flex-col gap-2">
+    <div class="flex flex-col">
+      <label htmlFor="username">Tipo</label>
+      <input pInputText id="username" aria-describedby="username-help" formControlName="tipo" />
+    </div>
+    <div class="flex flex-col">
+      <label htmlFor="username">Nome</label>
+      <input pInputText id="username" aria-describedby="username-help" formControlName="nome" />
+    </div>
+
+  </form>
+  <div class="col-start-1 col-end-8 flex justify-end">
+    <button type="submit" (click)="data ? editVacina()  : createVacina() " class="btn-dash btn-dash-blue mt-10  ">
+      Cadastrar
+    </button>
+  </div>
+</div>

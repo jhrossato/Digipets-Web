@@ -1,0 +1,57 @@
+.drawer {
+  background: linear-gradient(176deg,
+      rgba(39, 58, 255, 1) 12%,
+      rgba(4, 170, 255, 1) 69%);
+  padding: 20px;
+  color: #fff;
+
+  .logo-drawer {}
+}
+
+.mat-expansion-panel {
+  background: none;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 !important;
+}
+
+.mdc-list-item__primary-text,
+.mdc-list-item__start {
+  color: #fff !important;
+}
+
+.mdc-list-item__start {
+  font-size: 20px !important;
+}
+
+::ng-deep .mdc-list-item__start {
+  margin-left: 12px !important;
+  margin-right: 10px !important;
+}
+
+::ng-deep .mat-drawer-content {
+  background: #e5f4fc !important;
+}
+
+
+.b {
+  border: 1px solid red;
+  min-height: 100%;
+
+}
+
+::ng-deep .mat-mdc-card {
+  border-radius: 2rem !important;
+}
+
+
+.wd {
+  max-width:50rem;
+  margin: 0 auto;
+}
+
+
+.mat-mdc-card {
+  border-radius: 0px !important;
+}

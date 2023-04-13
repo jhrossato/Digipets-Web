@@ -1,0 +1,25 @@
+{
+  "menuItems": [
+    {
+      "name": "Dashboard",
+      "icon": "dashboard",
+      "url": "/dashboard",
+      "subItems": []
+    },
+    {
+      "name": "Pet",
+      "icon": "fa-solid fa-paw",
+      "url": "",
+      "subItems": [
+        {
+          "name": "Adicionar PET",
+          "url": "/clientes/adicionar"
+        },
+        {
+          "name": "Listar PET",
+          "url": "/clientes/listar"
+        }
+      ]
+    }
+  ]
+}

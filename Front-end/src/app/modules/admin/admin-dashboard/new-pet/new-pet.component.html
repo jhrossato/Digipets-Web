@@ -1,0 +1,22 @@
+<div class="h-96">
+  <mat-card-header>
+    <mat-card-title>Cadastro</mat-card-title>
+  </mat-card-header>
+  <mat-stepper #stepper linear>
+    <mat-step>
+      <ng-template matStepLabel>Tutor</ng-template>
+      <app-tutor [veterinarioId]="veterianrioId" [next]="stepper" (tutortId)="setTutorId($event)"></app-tutor>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Pet</ng-template>
+      <app-pet [tutorId]="tutorId" [next]="stepper" (petId)="setPetId($event)"></app-pet>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Vacinas</ng-template>
+      <div class=" flex items-center justify-center mt-8">
+        <button (click)="openDialogVacinas()" pButton type="button" label="Adicionar a vacina na carteira"
+          class="p-button-secondary"></button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+</div>

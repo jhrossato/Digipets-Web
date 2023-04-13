@@ -1,0 +1,53 @@
+<form [formGroup]="formLogin" class="md:w-80 m-auto">
+  <div class="mt-6 flex flex-col items-center justify-center">
+    <h1 class="welcome-logo">Bem vindo!</h1>
+    <div *ngIf="isAuthenticated">
+      <p class="error-message">Login inválido</p>
+    </div>
+    <mat-form-field class="w-full" appearance="outline">
+      <input
+        matInput
+        type="email"
+        placeholder="E-mail"
+        formControlName="email"
+      />
+      <mat-icon matSuffix class="icon-input">
+        <i class="fa-solid fa-envelope"></i>
+      </mat-icon>
+      <mat-error
+        *ngIf="
+          formLogin.get('email')!.hasError('email') ||
+          formLogin.get('email')!.hasError('required')
+        "
+      >
+        Insira um endereço de e-mail válido.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="w-full" appearance="outline">
+      <input
+        type="password"
+        matInput
+        placeholder="senha"
+        formControlName="password"
+      />
+      <mat-icon matSuffix class="icon-input">
+        <i class="fa-solid fa-key"></i>
+      </mat-icon>
+      <mat-error
+        *ngIf="
+          formLogin.get('password')!.hasError('required') ||
+          formLogin.get('password')!.hasError('minlength')
+        "
+      >
+        A senha deve ter pelo menos 8 caracteres.
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <p class="text-end">
+    <a href="">Esqueceu a Senha</a>
+  </p>
+  <button (click)="onLogin()" class="btn btn-blue">Login</button>
+  <p class="text-center mt-2">
+    Não tem conta? <a (click)="cadastroVeterinario()" class="cursor-pointer"> Cria sua conta </a>
+  </p>
+</form>
