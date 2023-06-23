@@ -1,0 +1,15 @@
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Release\net6.0\Digipets.Application.deps.json
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Release\net6.0\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Release\net6.0\Digipets.Application.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Release\net6.0\Digipets.Domain.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Release\net6.0\Digipets.Domain.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.csproj.AssemblyReference.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.AssemblyInfoInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.AssemblyInfo.cs
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.csproj.CoreCompileInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.csproj.CopyComplete
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\refint\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\Digipets.Application.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Release\net6.0\ref\Digipets.Application.dll

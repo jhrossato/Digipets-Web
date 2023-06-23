@@ -3,6 +3,7 @@ using Digipets.Application.Interfaces;
 using Digipets.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Digipets.API.Controllers
 {
@@ -22,7 +23,7 @@ namespace Digipets.API.Controllers
         public async Task<ActionResult<IEnumerable<TutorDTO>>> GetAll()
         {
             var tutores = await _tutorService.GetTutores();
-            return Ok(tutores);
+            return tutores.IsNullOrEmpty() ? NotFound() : Ok(tutores);
         }
         [HttpGet("{id:int}")]
         public async Task<ActionResult<TutorDTO>> GetById(int id)
@@ -61,7 +62,7 @@ namespace Digipets.API.Controllers
         public async Task<ActionResult<IEnumerable<AnimalDTO>>> GetAnimaisByTutorId(int id)
         {
             var animais = await _animalService.GetAnimaisByTutorId(id);
-            return animais is null ? NotFound() : Ok(animais);
+            return animais.IsNullOrEmpty() ? NotFound() : Ok(animais);
         }
         [HttpPost("{id:int}/Animais")]
         public async Task<ActionResult<TutorDTO>> PostNewAnimal(int id, AnimalDTO animal)

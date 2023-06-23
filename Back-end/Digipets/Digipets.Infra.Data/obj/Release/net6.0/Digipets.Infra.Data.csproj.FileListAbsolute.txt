@@ -1,0 +1,17 @@
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Infra.Data.deps.json
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Infra.Data.runtimeconfig.json
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Infra.Data.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Infra.Data.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Domain.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\bin\Release\net6.0\Digipets.Domain.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.csproj.AssemblyReference.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.AssemblyInfoInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.AssemblyInfo.cs
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.csproj.CoreCompileInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.csproj.CopyComplete
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\refint\Digipets.Infra.Data.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\Digipets.Infra.Data.genruntimeconfig.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Infra.Data\obj\Release\net6.0\ref\Digipets.Infra.Data.dll

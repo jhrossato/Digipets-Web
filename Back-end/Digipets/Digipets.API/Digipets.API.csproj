@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Digipets.Infra.IoC\Digipets.Infra.IoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Bin\**\*.rpt" />
+  </ItemGroup>
+  
 </Project>

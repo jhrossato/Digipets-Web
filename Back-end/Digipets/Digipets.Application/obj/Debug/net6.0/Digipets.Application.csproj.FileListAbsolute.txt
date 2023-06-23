@@ -1,18 +1,3 @@
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.deps.json
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.dll
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.pdb
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Domain.dll
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Domain.pdb
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.AssemblyReference.cache
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.AssemblyInfoInputs.cache
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.AssemblyInfo.cs
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.CoreCompileInputs.cache
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.CopyComplete
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.dll
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\refint\Digipets.Application.dll
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.pdb
-D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\ref\Digipets.Application.dll
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.deps.json
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.dll
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.pdb
@@ -28,3 +13,18 @@ C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Di
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\refint\Digipets.Application.dll
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.pdb
 C:\Users\laris\OneDrive\Área de Trabalho\Digipets joao\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\ref\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.deps.json
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Application.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Domain.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\bin\Debug\net6.0\Digipets.Domain.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.AssemblyReference.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.AssemblyInfoInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.AssemblyInfo.cs
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.CoreCompileInputs.cache
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.csproj.CopyComplete
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\refint\Digipets.Application.dll
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\Digipets.Application.pdb
+D:\Dev\Digipets-Web\Back-end\Digipets\Digipets.Application\obj\Debug\net6.0\ref\Digipets.Application.dll

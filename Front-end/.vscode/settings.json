@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f9662103-0539-4712-a842-048db00ccb94/resourceGroups/DB/providers/Microsoft.Web/sites/DigipetsWeb",
+    "appService.deploySubpath": "dist\\digipets-web"
+}

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private url = "https://localhost:44321"
+  private url = "https://digipetswebapi.azurewebsites.net"
   constructor(private http: HttpClient) { }
 
 
